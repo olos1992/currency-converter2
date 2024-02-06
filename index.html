@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency-converter</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400;1,6..12,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+</head>
+
+<body>
+
+<form class="js-form">
+    <fieldset>
+        <legend class="form__legend">Przelicznik walut</legend>
+
+        <ul>Wymiana z
+            <li>
+                <label>
+                    <input class="js-inputPLN" type="radio" name="currencyToChange" value="PLN" checked>PLN
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="js-inputEUR" type="radio" name="currencyToChange" value="EUR">EUR
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="js-inputUSD" type="radio" name="currencyToChange" value="USD">USD
+                </label>
+            </li>
+        </ul>
+
+        <ul>Wymiana na
+            <li>
+                <label>
+                    <input class="js-outputPLN" type="radio" name="currencyChanged" value="PLN">PLN
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="js-outputEUR" type="radio" name="currencyChanged" value="EUR" checked>EUR
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input class="js-outputUSD" type="radio" name="currencyChanged" value="USD">USD
+                </label>
+            </li>
+        </ul>
+
+        <p>
+            <label>
+                Wymieniana kwota: <input class="js-amount" name="amountToChange" type="number" min="0.01" step="any">
+            </label>
+        </p>
+
+        <p>
+            Otrzymasz: <span class="js-result"></span>
+        </p>
+
+    </fieldset>
+    <button>Przelicz</button>
+</form>
+    
+
+</body>
+
+</html>
