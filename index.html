@@ -7,67 +7,74 @@
     <title>Currency-converter</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400;1,6..12,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;1,6..12,400;1,6..12,700&display=swap"
+        rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
     <script defer src="js/script.js"></script>
 </head>
 
 <body>
 
-<form class="js-form">
-    <fieldset>
-        <legend class="form__legend">Przelicznik walut</legend>
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend">Przelicznik walut</legend>
 
-        <ul>Wymiana z
-            <li>
+            <p class="form__amountField">
                 <label>
-                    <input class="js-inputPLN" type="radio" name="currencyToChange" value="PLN" checked>PLN
+                    Wymieniana kwota: <input class="form__amountInput js-amount" name="amountToChange" type="number" min="0.01"
+                        step="any">
                 </label>
-            </li>
-            <li>
-                <label>
-                    <input class="js-inputEUR" type="radio" name="currencyToChange" value="EUR">EUR
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input class="js-inputUSD" type="radio" name="currencyToChange" value="USD">USD
-                </label>
-            </li>
-        </ul>
+            </p>
 
-        <ul>Wymiana na
-            <li>
-                <label>
-                    <input class="js-outputPLN" type="radio" name="currencyChanged" value="PLN">PLN
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input class="js-outputEUR" type="radio" name="currencyChanged" value="EUR" checked>EUR
-                </label>
-            </li>
-            <li>
-                <label>
-                    <input class="js-outputUSD" type="radio" name="currencyChanged" value="USD">USD
-                </label>
-            </li>
-        </ul>
+            <ul class="form__radio">Wymiana z
+                <li class="form__radioOption">
+                    <label class="js-label">
+                        <input class="form__input js-inputPLN" type="radio" name="currencyToChange" value="PLN" checked>PLN
+                    </label>
+                </li>
+                <li class="form__radioOption">
+                    <label>
+                        <input class="form__input js-inputEUR" type="radio" name="currencyToChange" value="EUR">EUR
+                    </label>
+                </li>
+                <li class="form__radioOption">
+                    <label>
+                        <input class="form__input js-inputUSD" type="radio" name="currencyToChange" value="USD">USD
+                    </label>
+                </li>
+            </ul>
 
-        <p>
-            <label>
-                Wymieniana kwota: <input class="js-amount" name="amountToChange" type="number" min="0.01" step="any">
-            </label>
-        </p>
+            <ul class="form__radio">Wymiana na
+                <li class="form__radioOption">
+                    <label>
+                        <input class="form__input js-outputPLN" type="radio" name="currencyChanged" value="PLN">PLN
+                    </label>
+                </li>
+                <li class="form__radioOption">
+                    <label>
+                        <input class="form__input js-outputEUR" type="radio" name="currencyChanged" value="EUR" checked>EUR
+                    </label>
+                </li>
+                <li class="form__radioOption">
+                    <label>
+                        <input class="form__input js-outputUSD" type="radio" name="currencyChanged" value="USD">USD
+                    </label>
+                </li>
+            </ul>
 
-        <p>
-            Otrzymasz: <span class="js-result"></span>
-        </p>
+            <p class="form__result">
+                Otrzymasz: <span class="form__resultNumber js-result">N/A</span>
+            </p>
 
-    </fieldset>
-    <button>Przelicz</button>
-</form>
-    
+        </fieldset>
+        <button class="form__button">Przelicz</button>
+    </form>
+
 
 </body>
 
