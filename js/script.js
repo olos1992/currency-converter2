@@ -32,4 +32,3 @@ form.addEventListener("submit", (event) => {
         result.innerText = `${amount.value} USD`
     }
 });
-
