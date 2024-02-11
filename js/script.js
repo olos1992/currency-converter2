@@ -1,8 +1,6 @@
 let form = document.querySelector(".js-form");
 let amount = document.querySelector(".js-amount");
 let result = document.querySelector(".js-result");
-let button = document.querySelector(".js-button");
-let label = document.querySelector(".js-label");
 
 let inputPLN = document.querySelector(".js-inputPLN");
 let inputEUR = document.querySelector(".js-inputEUR");
