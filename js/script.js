@@ -1,14 +1,14 @@
-let form = document.querySelector(".js-form");
-let amount = document.querySelector(".js-amount");
-let result = document.querySelector(".js-result");
+const form = document.querySelector(".js-form");
+const amount = document.querySelector(".js-amount");
+const result = document.querySelector(".js-result");
 
-let inputPLN = document.querySelector(".js-inputPLN");
-let inputEUR = document.querySelector(".js-inputEUR");
-let inputUSD = document.querySelector(".js-inputUSD");
+const inputPLN = document.querySelector(".js-inputPLN");
+const inputEUR = document.querySelector(".js-inputEUR");
+const inputUSD = document.querySelector(".js-inputUSD");
 
-let outputPLN = document.querySelector(".js-outputPLN");
-let outputEUR = document.querySelector(".js-outputEUR");
-let outputUSD = document.querySelector(".js-outputUSD");
+const outputPLN = document.querySelector(".js-outputPLN");
+const outputEUR = document.querySelector(".js-outputEUR");
+const outputUSD = document.querySelector(".js-outputUSD");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
