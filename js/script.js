@@ -12,7 +12,6 @@ const outputUSD = document.querySelector(".js-outputUSD");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-
     switch (true) {
         case inputPLN.checked && outputPLN.checked:
             result.innerText = `${(amount.value / 1).toFixed(2)} PLN`;
