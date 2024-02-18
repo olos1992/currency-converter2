@@ -6,16 +6,21 @@
 
 .form__fieldset {
     border-radius: 20px;
-    background-color: #cccccc6d;
+    background-color: #2f302bef;
+    color: aqua;
+    border: 2px solid #632d2de7;
+    margin: 0 30px;
 }
 
 .form__legend {
     text-align: center;
     padding: 20px;
-    font-size: 20px;
-    border: 2px solid #b05656;
-    background-color: #ccccccdd;
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid #632d2de7;
+    background-color: #3e3f39;
     border-radius: 10px;
+    color: aqua;
 }
 
 .form__radio {
@@ -65,9 +70,12 @@
     display: block;
     margin: 0 auto;
     margin-top: 15px;
-    min-width: 30%;
-    padding: 5px;
+    min-width: 50%;
+    padding: 10px;
     cursor: pointer;
-    border: 2px solid #b05656;
+    border: 2px solid #632d2de7;
     border-radius: 10px;
+    background-color: #3e3f39;
+    color: aqua;
+    font-size: 20px;
 }
