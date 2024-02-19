@@ -30,17 +30,17 @@
         }
     };
 
-    const updateResultText = (amount, result) => {
+    const updateResultText = () => {
+        const amount = document.querySelector(".js-amount");
+        const result = document.querySelector(".js-result");
+
         result.innerText = calculateResult(amount);
     };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const amount = document.querySelector(".js-amount");
-        const result = document.querySelector(".js-result");
-
-        updateResultText(amount, result);
+        updateResultText();
     };
 
     const init = () => {
