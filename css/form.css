@@ -6,8 +6,8 @@
 
 .form__fieldset {
     border-radius: 20px;
-    background-color: #2f302bef;
-    color: aqua;
+    background-color: white;
+    color: #6b6565;
     border: 2px solid #632d2de7;
     margin: 0 30px;
 }
