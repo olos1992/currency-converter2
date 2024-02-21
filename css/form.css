@@ -8,7 +8,7 @@
     border-radius: 20px;
     background-color: white;
     color: #6b6565;
-    border: 2px solid #632d2de7;
+    border: 5px solid #632d2de7;
     margin: 0 30px;
 }
 
@@ -17,7 +17,7 @@
     padding: 20px;
     font-size: 25px;
     font-weight: bold;
-    border: 2px solid #632d2de7;
+    border: 5px solid #632d2de7;
     background-color: #3e3f39;
     border-radius: 10px;
     color: aqua;
@@ -73,7 +73,7 @@
     min-width: 50%;
     padding: 10px;
     cursor: pointer;
-    border: 2px solid #632d2de7;
+    border: 5px solid #632d2de7;
     border-radius: 10px;
     background-color: #3e3f39;
     color: aqua;
