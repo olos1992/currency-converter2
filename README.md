@@ -1,6 +1,6 @@
 # CURRENCY CONVERTER
 
-![Currency converter preview](images/preview.png)
+![Currency converter preview](images/preview1.png)
 
 ## Table of contents
 
